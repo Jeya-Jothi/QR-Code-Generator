@@ -1,0 +1,94 @@
+
+p{
+  margin: 0;
+  font-family: "Comfortaa", sans-serif;
+}
+.whole-box{
+  /* height: 500px; */
+  background-color: rgb(249, 249, 249);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 40px;
+  padding: 20px 50px 50px 50px; 
+  margin: 20px;
+}
+.heading{
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 20px;
+}
+.content{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ margin-top: 20px;
+
+}
+.one, .two{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  height:400px;
+  border: 1px solid rgb(136, 136, 136);
+}
+.two{
+  margin-left: -1px;
+}
+/* When generate */
+.image-content-margin{
+  padding-top: 50px;
+}
+/* end */
+.url-content p{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.url-content input{
+  font-family: "Comfortaa", sans-serif;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  border:1px solid rgb(197, 197, 197) ;
+  color: rgb(76, 76, 76);
+}
+input::placeholder{
+  font-family: "Comfortaa", sans-serif;
+  color: rgb(128, 128, 128);
+}
+input:focus{
+  outline: none;
+  border:1px solid rgb(118, 118, 118) ;
+}
+.image-content p{
+  font-size: 20px;
+}
+.generate{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.generate button, .download{
+  font-family: "Comfortaa", sans-serif;
+  font-weight: bold;
+  background-color: rgb(241, 241, 241);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border:1px solid rgb(197, 197, 197) ;
+  font-size: 20px;
+  transition: background-color 0.15s, color 0.15s;
+}
+.generate button:hover, .download:hover{
+  background-color: rgb(234, 234, 234);
+}
+.generate button:active, .download:active{
+  background-color: rgb(3, 3, 3);
+  color: white;
+}
+/* when generate */
+.download-margin{
+  margin-top: -80px;
+}

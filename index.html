@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Genarator</title>
+  <link rel="stylesheet" href="QRCode.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Dancing+Script&family=Playwrite+US+Trad:wght@100..400&family=Rubik+Vinyl&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="whole-box">
+    <div class="heading">
+      <p>QR Code Generator</p>
+    </div>
+    <div class="content">
+      <div class="one">
+        <div class="url-content">
+          <p>Enter Your URL</p>
+          <input type="text" placeholder="URL">
+        </div>
+      </div>
+      <div class="two">
+        <div class="image-content">
+          <p>QR Code Image</p>
+        </div>
+        <button style="display: none ;" id ="download" class="download">Download</button>
+      </div>
+    </div>
+
+    <div class="generate">
+      <button class="generate-button">Generate</button>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <script src="QRCode.js" type="module"></script>
+</body>
+</html>
