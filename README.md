@@ -4,7 +4,7 @@ A simple and elegant web application that allows users to generate a QR code ima
 
 ## 🔗 Live Demo
 
-👉 _Coming Soon_
+👉 https://qr-code-generator-64vs.onrender.com
 
 ## Features
 
@@ -20,7 +20,7 @@ A simple and elegant web application that allows users to generate a QR code ima
 - **Backend**: Node.js with Express.js
 - **Other**: Render (or local server setup)
 
-## 📂 Project Structure
+## Project Structure
 
 QR-Code-Image-Generator/
 ├── public/
