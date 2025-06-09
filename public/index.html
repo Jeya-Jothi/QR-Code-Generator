@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Image Generator</title>
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <div class="logo-div">
+          <img src="/images/qr-code logo.svg" class="logo-img" />
+        </div>
+        <div class="title-div"><p class="title-txt">QR Code Generator</p></div>
+        <div class="nav">
+          <a href="about.html">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="input-div">
+          <p>Enter Your URL</p>
+          <input
+            type="text"
+            placeholder="Enter the URL"
+            id="url-input"
+            required
+          />
+        </div>
+        <div class="line-div"></div>
+        <div class="img-download-div">
+          <p class="qr-image-txt">
+            Enter a URL and click Generate — your QR code will show here!
+          </p>
+          <canvas id="qrcode" class="qr-img" style="display: none"></canvas>
+          <a
+            style="display: none"
+            id="download-link"
+            class="download"
+            download="qr_image.png"
+            title="Download the QR image"
+            >Download
+          </a>
+        </div>
+      </div>
+      <div class="generate-btn">
+        <button class="submit-btn-js" title="Generate QR image for this URL ">
+          Generate
+        </button>
+      </div>
+    </div>
+    <!-- Footer - Contact -->
+    <footer id="contact">
+      <div class="footer-top">
+        <div class="getintouch-txt-div">
+          <p>Get In</p>
+          <p>Touch.</p>
+        </div>
+        <div class="contact-div">
+          <div class="contact-head">
+            <p>Contact</p>
+          </div>
+          <div class="contact-list-div">
+            <div>
+              <p><strong>Email: </strong>jeyajothi108@gmail.com</p>
+            </div>
+            <div>
+              <p><strong>Phone.No: </strong>+91 8270907155</p>
+            </div>
+            <div class="social-media-icon-div">
+              <a
+                href="https://www.linkedin.com/in/jeya-jothi-841277211"
+                target="_blank"
+                rel="noopene noreferrer"
+                title="Connect with Me on LinkedIn"
+              >
+                <img
+                  src="images/linkedin icon.svg"
+                  alt="linkedin icon"
+                  class="contact-icon"
+                />
+              </a>
+              <a
+                href="https://github.com/Jeya-Jothi"
+                target="_blank"
+                rel="noopene noreferrer"
+                title="View My GitHub Projects"
+              >
+                <img
+                  src="images/github icon.svg"
+                  alt="github icon"
+                  class="contact-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright-div">
+        <p id="year"></p>
+        <img
+          src="images/copyright icon.svg"
+          alt="copyright icon"
+          class="cpr-img"
+        />
+        <p>Jeya Jothi | All rights reserved</p>
+      </div>
+    </footer>
+    <!-- QRCode library -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+    <script type="module" src="/index.js"></script>
+  </body>
+</html>
